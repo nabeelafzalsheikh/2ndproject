@@ -45,7 +45,7 @@ Route::middleware(['tenant'])->group(function () {
     })->name('tenant.dashboard')->middleware('auth:tenant');
 });
 
-
+route::get('/iam',return view('fun'))
 
 Route::get('users/{id}', function($id) {
     echo $id;
